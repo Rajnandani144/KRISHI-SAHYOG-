@@ -1,0 +1,225 @@
+/* General Styles */
+/*body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004d40;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.diagnostics-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.diagnostics-intro h1 {
+    font-size: 36px;
+    color: #004d40;
+}
+
+.diagnostics-intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Crop Selection Section */
+/*
+.crop-selection {
+    margin-bottom: 30px;
+}
+
+.crop-selection h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.crop-selection select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Symptom Identification Section */
+/*
+.symptom-identification {
+    margin-bottom: 30px;
+}
+
+.symptom-identification h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.symptom-identification textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.symptom-identification input[type="file"] {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.symptom-identification button {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.symptom-identification button:hover {
+    background-color: #ffcc00;
+    color: #004d40;
+}
+
+/* Diagnostic Results Section */
+/*
+.diagnostic-results {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    display: none; /* Hidden until results are shown */
+    /*
+}
+
+.diagnostic-results h2 {
+    font-size: 28px;
+    color: #004d40;
+}
+
+.diagnostic-results div {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+/*
+
+footer {
+    background-color: #004d40;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+*/
+.diagnosis-section {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.diagnosis-section h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.diagnosis-section label {
+    font-size: 18px;
+    color: #004d40;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.diagnosis-section select,
+.diagnosis-section textarea,
+.diagnosis-section input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.diagnosis-section select:focus,
+.diagnosis-section textarea:focus,
+.diagnosis-section input[type="file"]:focus {
+    border-color: #ffcc00;
+}
+
+.diagnosis-section textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.diagnosis-section .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #004d40;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.diagnosis-section .btn:hover {
+    background-color: #00332f;
+}
+
+.diagnosis-section img {
+    max-width: 100%;
+    margin-top: 15px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

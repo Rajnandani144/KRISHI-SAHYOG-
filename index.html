@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis - Farmers Disease Portal</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Diagnosis</a></li>
+                <li><a href="livestock.html">LiveStock</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="diagnosis-section">
+        <h2>Get Your Crop Diagnosed</h2>
+        <form id="diagnosisForm">
+            <label for="cropType">Select Crop:</label>
+            <input type="text" id="cropType" placeholder="e.g., Wheat, Rice, Maize" required>
+
+            <label for="symptoms">Describe Symptoms:</label>
+            <textarea id="symptoms" placeholder="e.g., yellowing leaves, stunted growth" required></textarea>
+
+            <button type="submit" class="btn">Diagnose</button>
+        </form>
+
+        <h3>Diagnosis Result:</h3>
+        <p id="diagnosisResult"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Farmers Diagnostic Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

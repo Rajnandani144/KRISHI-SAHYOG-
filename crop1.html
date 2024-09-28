@@ -1,0 +1,30 @@
+<section id="livestock-diagnosis" class="diagnosis-section">
+    <h2>Livestock Health Diagnosis</h2>
+    <form id="livestockForm">
+        <label for="animalType">Select Animal Type:</label>
+        <select id="animalType">
+            <option value="">-- Select Animal --</option>
+            <option value="cattle">Cattle</option>
+            <option value="goat">Goat</option>
+            <option value="chicken">Chicken</option>
+            <option value="sheep">Sheep</option>
+        </select>
+
+        <label for="symptoms">Describe Symptoms:</label>
+        <textarea id="symptoms" placeholder="e.g., weight loss, coughing, lethargy"></textarea>
+
+        <label for="animalImage">Upload Image of Affected Livestock (optional):</label>
+        <input type="file" id="animalImage" accept="image/*">
+
+        # Image preview
+        <img id="imagePreview" style="max-width: 100%; margin-top: 10px; display: none;">
+
+        <button type="submit" class="btn">Diagnose</button>
+    </form>
+
+    <h3>Diagnosis Result:</h3>
+    <p id="diagnosisResult"></p>
+</section> 
+
+
+                

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis - Farmers Disease Portal</title>
+    <link rel="stylesheet" href="crop.css">
+        
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="crop.html">Crop Diagnostics</a></li>
+                <li><a href="livestock.html">Livestock Health</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="top">
+    <h1 class="top">Diagnose and Report Crop Diseases with Ease</h1>
+    <p>
+        Utilize our advanced AI tools to quickly identify and report crop diseases, ensuring the health and productivity of your farm.
+    </p>
+        <img src="crops.jpg" alt="image not found">
+        <br>
+</div>
+    
+    <!-- 3 Steps Section -->
+<div class="steps-section">
+    <h2>3 Steps to Identify and Report Crop Diseases</h2>
+    <p>Follow these simple steps to ensure your crops remain healthy and productive.</p>
+
+    <div class="step-container">
+        <div class="step">
+            <div class="icon-container">
+                <img src="camera-icon.png" alt="Camera Icon">
+            </div>
+            <div class="step-info">
+                <h4>Capture Image</h4>
+                <p>Take a clear photo of the affected crop area using your mobile device.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="icon-container">
+                <img src="upload-icon.png" alt="Upload Icon">
+            </div>
+            <div class="step-info">
+                <h4>Upload and Diagnose</h4>
+                <p>Upload the image to our platform and let our AI analyze it for potential diseases.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="icon-container">
+                <img src="report-icon.png" alt="Report Icon">
+            </div>
+            <div class="step-info">
+                <h4>Receive Report</h4>
+                <p>Get a detailed diagnostic report along with recommended actions to take.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Diagnosis Section-->
+<section class="diagnostics-intro">
+    <h1>Crop Diagnostics</h1>
+    <p>Identify diseases affecting your crops and get actionable solutions to protect and treat them.</p>
+</section>
+<section id="livestock-diagnosis" class="diagnosis-section">
+    <form id="livestockForm">
+        <label for="animalType">Select Crop Type:</label>
+        <select id="animalType">
+            <option value="">-- Select Crop --</option>
+            <option value="cattle">Grains</option>
+            <option value="goat">Legumes</option>
+            <option value="chicken">Fruits</option>
+            <option value="sheep">Vegetable</option>
+        </select>
+
+        <label for="symptoms">Describe Symptoms:</label>
+        <textarea id="symptoms" placeholder="e.g: leaf spots,fungal infection,etc"></textarea>
+
+        <label for="animalImage">Upload Image of Affected Crop:</label>
+        <input type="file" id="animalImage" accept="image/*">
+
+        # Image preview
+        <img id="imagePreview" style="max-width: 100%; margin-top: 10px; display: none;">
+
+        <button type="submit" class="btn">Diagnose</button>
+    </form>
+
+    <h3>Diagnosis Result:</h3>
+    <p id="diagnosisResult"></p>
+</section>
+<!-- Common Crop Diseases Section -->
+<section class="crop-diseases-section">
+    <h2 class="section-title">Common Crop Diseases</h2>
+    <div class="disease-grid">
+        <div class="disease-card">
+            <img src="img1.jpg" alt="Leaf Blight">
+            <div class="disease-info">
+                <h4>Leaf Blight</h4>
+                <p>Blight</p>
+            </div>
+        </div>
+        <div class="disease-card">
+            <img src="img2.jpg" alt="Powdery Mildew">
+            <div class="disease-info">
+                <h4>Powdery Mildew</h4>
+                <p>Mildew</p>
+            </div>
+        </div>
+        <div class="disease-card">
+            <img src="img3.jpg" alt="Aphid Infestation">
+            <div class="disease-info">
+                <h4>Aphid Infestation</h4>
+                <p>Pest</p>
+            </div>
+        </div>
+        <div class="disease-card">
+            <img src="img7.jpg" alt="Tobacco Mosaic Virus">
+            <div class="disease-info">
+                <h4>Tobacco Mosaic Virus</h4>
+                <p>Virus</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Farmers Diagnostic Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock Health - Farmers Portal</title>
+    <link rel="stylesheet" href="livestock.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="diagnosis.html">Crop Diagnosis</a></li>
+                <li><a href="livestock.html">Livestock Health</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="livestock-hero">
+            <h1>Livestock Health Diagnosis & Treatment</h1>
+            <p>Get insights and diagnosis for common livestock diseases to keep your animals healthy.</p>
+            <a href="#livestock-diagnosis" class="btn">Start Diagnosis</a>
+        </section>
+
+        <section id="livestock-diagnosis" class="diagnosis-section">
+            <h2>Livestock Health Diagnosis</h2>
+            <form id="livestockForm">
+                <label for="animalType">Select Animal Type:</label>
+                <select id="animalType">
+                    <option value="">-- Select Animal --</option>
+                    <option value="cattle">Cattle</option>
+                    <option value="goat">Goat</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="sheep">Sheep</option>
+                </select>
+
+                <label for="symptoms">Describe Symptoms:</label>
+                <textarea id="symptoms" placeholder="e.g., weight loss, coughing, lethargy"></textarea>
+
+                <label for="animalImage">Upload Image of Affected Livestock (optional):</label>
+                <input type="file" id="animalImage" accept="image/*">
+
+                <!-- Image preview -->
+                <img id="imagePreview" style="max-width: 100%; margin-top: 10px; display: none;">
+
+                <button type="submit" class="btn">Diagnose</button>
+            </form>
+
+            <h3>Diagnosis Result:</h3>
+            <p id="diagnosisResult"></p>
+        </section>
+
+        <section class="common-diseases">
+            <h2>Common Livestock Diseases</h2>
+            <div class="disease-grid">
+                <!-- <div class="disease-card">
+                    <img class="card-img-top" src="cow.jpeg" length="600" width="275" alt="Card image">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">John Doe</h4>
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div> -->
+                <div class="disease-card">
+                    <h3>Foot-and-Mouth Disease (FMD)</h3>
+                    <img class="card-img-top" src="cow.jpeg" length="600" width="275" alt="Card image">
+                    
+                    <p>Affects cattle, sheep, goats, and pigs. Symptoms include fever, blisters on the mouth and feet. Vaccination is essential.</p>
+                </div> 
+                <div class="disease-card">
+                    <h3>Newcastle Disease</h3>
+                    <img class="card-img-top" src="chicken.jpeg" length="600" width="275" alt="Card image">
+
+                    <p>Common in poultry, especially chickens. Symptoms include respiratory distress, drooping wings, and paralysis.</p>
+                </div>
+                <div class="disease-card">
+                    <h3>Mastitis</h3>
+                    <img class="card-img-top" src="mastitis.jpeg" length="600" width="275" alt="Card image">
+                    <p>Affects dairy cattle. Symptoms include swelling and redness of the udder, reduced milk production. Proper hygiene can prevent it.</p>
+                </div>
+                <div class="disease-card">
+                    <h3>Peste des Petits Ruminants (PPR)</h3>
+                    <img class="card-img-top" src="sheep.jpeg" length="600" width="275" alt="Card image">
+
+                    <p>Affects goats and sheep. Symptoms include fever, mouth ulcers, and diarrhea. Vaccination is the best prevention.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Livestock Health Resources</h2>
+            <p>Access detailed guides, manuals, and videos to help maintain your livestock's health.</p>
+            <a href="resources.html" class="btn">View Resources</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Farmers Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="livestock.js"></script>
+</body>
+</html>
